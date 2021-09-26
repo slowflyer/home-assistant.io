@@ -98,10 +98,24 @@ The following sensors are available in the library:
 | Battery Dynamic Soc     |      | RW | Dynamic SoC. |
 | Battery min Home Consumption | W    | RW | Min. home consumption power for battery. |
 | Battery min Soc         | %    | RW | Min. SoC of battery. |
-| Battery Smart Control   |      | RW | Enable smart battery control |
 | Battery Strategy        |      | RW | Battery strategy. |
 | Shadow Management       |      | RW | PV string shadow management. |
 
 <div class='note'>
 Setting values change less often, therefore these sensors are only polled every 5 minutes.
+</div>
+
+### Switches
+
+The following switches are available in the library:
+
+| Name                    | Description   |
+|-------------------------|:--------------|
+| Battery Smart Control   | Enable smart battery control |
+| Battery Time-controlled usage | Enable Time-controlled battery usage  |
+
+<div class='note'>
+Both switches need to be turned off, before one switch can be enabled.
+If no switch is enabled, behavior is equal to " Time-controlled battery usage"
+without any restrictions on the timetable.
 </div>
